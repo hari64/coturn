@@ -15,3 +15,5 @@ max-port=65535)
 7. Enable logging at line 527 also enable syslog at line 531
 
 Update your configuration according to your need
+
+Test your server [here](https://icetest.info/)
