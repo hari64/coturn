@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  coturn:
+    image: coturn/coturn:latest
+    container_name: coturn-server
+    network_mode: host
+    restart: unless-stopped
+    volumes:
+      # Bind a custom configuration file
+      - ./turnserver.conf:/etc/coturn/turnserver.conf
